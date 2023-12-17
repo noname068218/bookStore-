@@ -30,7 +30,7 @@ const Navbar = () => {
             </a>
           </div>
           <div>
-            <ul className="flex gap-4 items-center hidden">
+            <ul className="flex gap-4 items-center">
               {Menu.map((menu) => (
                 <li key={menu.id}>
                   <a href={menu.link}>{menu.name}</a>
