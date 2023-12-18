@@ -1,6 +1,7 @@
 import BestBook from "./components/Services/Services";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import Banner from "./components/Banner/Banner";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <BestBook />
+        <Banner />
       </div>
     </>
   );
