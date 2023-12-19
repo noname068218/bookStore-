@@ -5,6 +5,7 @@ import Banner from "./components/Banner/Banner";
 import AppStoreBanner from "./components/AppStoreBanner/AppStoreBanner";
 import AllBooks from "./components/AllBooks/AllBooks";
 import Testimonials from "./components/Testimonial/Testimonials";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <AppStoreBanner />
         <AllBooks />
         <Testimonials />
+        <Footer />
       </div>
     </>
   );
