@@ -27,7 +27,7 @@ const ImageList = [
   },
 ];
 
-const Hero = () => {
+const Hero = ({ handleOpenModal }) => {
   const [imageid, setImageId] = useState(book1);
   const [title, setTitle] = useState("His Life will forever be Changed");
   const [description, setDescriprion] = useState(
@@ -70,6 +70,7 @@ const Hero = () => {
               <p className="text-sm">{description}</p>
               <div>
                 <button
+                  onClick={handleOpenModal}
                   data-aos="zoom-in"
                   className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200"
                 >

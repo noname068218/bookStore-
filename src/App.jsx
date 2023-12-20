@@ -11,8 +11,15 @@ import Footer from "./components/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
+import Modal from "./components/modalWindow/modal";
 
 const App = () => {
+  const [orderModal, setOrderModal] = React.useState(false);
+
+  const handleOpenModal = () => {
+    setOrderModal(!orderModal);
+  };
+
   React.useEffect(() => {
     AOS.init({
       offset: 100,
@@ -26,14 +33,15 @@ const App = () => {
   return (
     <>
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-300">
-        <Navbar />
-        <Hero />
-        <BestBook />
+        <Navbar handleOpenModal={handleOpenModal} />
+        <Hero handleOpenModal={handleOpenModal} />
+        <BestBook handleOpenModal={handleOpenModal} />
         <Banner />
         <AppStoreBanner />
         <AllBooks />
         <Testimonials />
         <Footer />
+        <Modal handleOpenModal={handleOpenModal} orderModal={orderModal} />
       </div>
     </>
   );
