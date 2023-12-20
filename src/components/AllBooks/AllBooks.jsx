@@ -7,7 +7,10 @@ const AllBooks = () => {
         <div className="container placeholder-gray-100">
           {/* Header */}
 
-          <div className="text-center mb-20 max-w-[400px] mx-auto">
+          <div
+            data-aos="slide-up"
+            className="text-center mb-20 max-w-[400px] mx-auto"
+          >
             <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
               Best Books
             </p>
@@ -19,7 +22,10 @@ const AllBooks = () => {
           </div>
           {/* card */}
           <div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
+            <div
+              data-aos="slide-up"
+              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5"
+            >
               {BooksData.map((data) => (
                 <div key={data.id} className="space-y-3">
                   <img

@@ -1,9 +1,9 @@
 import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
   FaLocationArrow,
   FaMobileAlt,
+  FaInstagram,
+  FaFacebook,
+  FaLinkedin,
 } from "react-icons/fa";
 
 const FooterLinks = [

@@ -52,15 +52,27 @@ const Hero = () => {
             {/* Text Content */}
 
             <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl fron-bold">
+              <h1
+                data-aos="zoom-out"
+                data-aos-duration="500"
+                className="text-5xl sm:text-6xl lg:text-7xl fron-bold"
+              >
                 {title}
               </h1>
-              <p className="bg-clip-text text-transparent bg-gradient-to-b from-primary text-right text-sm to-secondary">
+              <p
+                data-aos="fade-up-left"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                className="bg-clip-text text-transparent bg-gradient-to-b from-primary text-right text-sm to-secondary"
+              >
                 by Anonymous
               </p>
               <p className="text-sm">{description}</p>
               <div>
-                <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200">
+                <button
+                  data-aos="zoom-in"
+                  className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200"
+                >
                   Order Now
                 </button>
               </div>
@@ -70,6 +82,8 @@ const Hero = () => {
               {/* Main Image */}
               <div className="h-[300px] sm:h-[450px] overflow-hidden flex justify-center items-center">
                 <img
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                   src={imageid}
                   alt=""
                   className="w-[300px] h-[300px] sm:[h-450px] sm:w-[450px] sm:scale-125 object-contain mx-auto"
@@ -77,9 +91,14 @@ const Hero = () => {
               </div>
               {/* other Image list*/}
 
-              <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full">
+              <div
+                data-aos="zoom-in-down"
+                className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full"
+              >
                 {ImageList.map((item) => (
                   <img
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
                     key={item.id}
                     src={item.img}
                     alt="Top Books"

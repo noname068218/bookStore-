@@ -13,6 +13,7 @@ const Banner = () => {
             {/* Image Section */}
             <div>
               <img
+                data-aos="zoom-in"
                 src={LibraryImg}
                 alt="Banner Image Library"
                 className="max-w-[400px] block mx-auto h-[350px] w-full drop-shadow-[-10px_10px_12px_rgba(0,0,0,1)] object-cover"
@@ -28,7 +29,7 @@ const Banner = () => {
                 reiciendis inventore iste ratione ex alias quis magni at optio
                 <br />
               </p>
-              <div className="flex flex-col gap-4">
+              <div data-aos="slide-up" className="flex flex-col gap-4">
                 <div className="flex items-center gap-4">
                   <GrSecure className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100 dark:bg-violet-400" />
                   <p>Quality Books</p>
